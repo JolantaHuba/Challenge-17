@@ -1,0 +1,74 @@
+.header
+    +flex-centered
+    flex-direction: column
+    position: relative
+    height: 100vh
+    background-image: linear-gradient(rgba(0,0,0,.3)), url(../img/header-mobile.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    font-size: 1rem
+    padding: 0 30px
+
+.header__heading
+    position: relative
+    font-family: 'Master Of Break', sans-serif
+    font-size: 2.2em
+    color: $red
+    text-align: center
+    z-index: 1
+    margin-bottom: 20px
+    &::before
+        display: block
+        position: absolute
+        top: 0
+        left: 0
+        content: 'Taste on Our hands!'
+        z-index: -1
+        -webkit-text-stroke: 10px $white
+        
+.header__text
+    font-size: 1em
+    text-transform: uppercase
+    font-weight: 700
+    letter-spacing: 2px
+    color: $white
+
+.header__arrow-down
+    position: absolute
+    bottom: 10%
+    font-size: 1.4em
+    color: $white
+    opacity: .7
+    animation: mouse-toggle 2.4s infinite
+
+@keyframes mouse-toggle
+    0%
+        opacity: 0
+    30%
+        opacity: .7
+    70%
+        opacity: .7
+    100%
+        opacity: 0
+        transform: translateY(50%)
+        
+
+@media (orientation: landscape)
+    .header
+        padding-top: 80px
+        background-image: linear-gradient(rgba(0,0,0,.3)), url(../img/header-mobile-land.jpg)
+
+@media (min-width: 768px) and (orientation: portrait)
+    .header
+        font-size: 1.5rem
+        background-image: linear-gradient(rgba(0,0,0,.3)), url(../img/header-tab.jpg)
+
+@media (min-width: 1024px)
+    .header
+        font-size: 1.6rem
+        background-image: linear-gradient(rgba(0,0,0,.3)), url(../img/header-desktop.jpg)
+
+@media (min-width: 1300px)
+    .header
+        font-size: 2rem
