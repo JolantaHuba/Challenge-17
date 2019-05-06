@@ -3,21 +3,22 @@
     top: 0
     left: 0
     width: 100%
-    height: 80px
+    height: 60px
     background-color: $white
     z-index: 99
-    
+    overflow: hidden
+
 .nav__wrapper
     display: flex
     flex-flow: row wrap
     justify-content: space-between
     align-items: center
-    max-width: $max-width
+    max-width: 1280px
     height: 100%
     margin: 0 auto
 
 .nav__logo
-    width: 60px
+    width: 50px
     margin: 10px 30px
 
 .nav__img
@@ -30,17 +31,17 @@
     align-items: center
     justify-content: space-between
     width: 50px
-    height: 50px
+    height: 45px
     border: none
     background-color: transparent
     margin-right: 20px
-    padding: 10px 0
+    padding: 8px
     &.active &-line:first-child 
-        transform: translateY(13px) rotate(225deg)
-    &.active &-line:nth-child(2) 
+        transform: translateY(12px) rotate(225deg)
+    &.active &-line:nth-child(2)
         transform: rotate(225deg)
     &.active &-line:last-child 
-        transform: translateY(-13px) rotate(-225deg)
+        transform: translateY(-12px) rotate(-225deg)
 
 .nav__burger-line
     width: 40px
@@ -53,11 +54,11 @@
     flex-direction: column
     justify-content: flex-start
     position: fixed
-    top: 80px
+    top: 60px
     right: 0
     width: 180px
     transform: translateX(105%)
-    height: calc(100vh - 80px)
+    height: calc(100vh - 60px)
     background-color: $white
     transition: transform .3s
     padding: 10px 0
@@ -124,4 +125,4 @@
 
 @media (min-width: 1300px)
     .nav__link
-        font-size: 1.2rem
+        font-size: 1.1rem

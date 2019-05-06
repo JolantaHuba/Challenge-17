@@ -1,0 +1,52 @@
+// RESERVATION 
+.reservation
+    +flex-centered
+    flex-direction: column
+    padding: 15vh 2rem
+
+@media (min-width: 1300px)
+    .reservation
+        font-size: 1.1rem
+
+// TIME
+.time
+    background-color: $pink
+    max-width: 1600px
+    margin: auto
+    overflow: hidden
+
+.time__table
+    display: none
+
+.time__wrapper
+    +flex-centered
+    flex-direction: column
+    padding: 10vh 2rem
+
+.time__pot
+    width: 100px
+    margin: 15px 0
+
+@media (min-width: 768px)
+    .time
+        display: flex
+        align-items: center
+
+    .time__table
+        display: block
+        width: 50%
+
+    .time__wrapper
+        padding: 0 2rem
+
+@media (min-width: 1300px)
+    .time
+        font-size: 1.3rem
+
+    .time__wrapper
+        max-width: 600px
+        margin: auto
+
+    .time__pot
+        width: 150px
+        margin: 50px 0

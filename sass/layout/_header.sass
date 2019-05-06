@@ -10,7 +10,7 @@
     font-size: 1rem
     padding: 0 30px
 
-.header__heading
+.main-heading
     position: relative
     font-family: 'Master Of Break', sans-serif
     font-size: 2.2em
@@ -28,11 +28,12 @@
         -webkit-text-stroke: 10px $white
         
 .header__text
+    color: $white
     font-size: 1em
     text-transform: uppercase
     font-weight: 700
     letter-spacing: 2px
-    color: $white
+
 
 .header__arrow-down
     position: absolute
@@ -56,7 +57,7 @@
 
 @media (orientation: landscape)
     .header
-        padding-top: 80px
+        padding-top: 30px
         background-image: linear-gradient(rgba(0,0,0,.3)), url(../img/header-mobile-land.jpg)
 
 @media (min-width: 768px) and (orientation: portrait)
