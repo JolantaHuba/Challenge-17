@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Challenge 17</title>
+
+    <link rel="stylesheet" href="glide-3.3.0/dist/css/glide.core.min.css">
+
     <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -32,7 +35,7 @@
     </nav>
 
     <header class="header">
-        <h1 class="main-heading">Taste on Our hands!</h1>
+        <h1 class="main-heading outline">Taste on Our hands!</h1>
         <p class="header__text">- Wellcome -</p>
         <a href="#reservation" class="header__arrow-down"><span class="icon-angle-double-down"></span></a>
     </header>
@@ -56,7 +59,73 @@
         </div>
     </section>
 
+    <section class="menu">
+        <h2 class="heading">Our<span class="heading heading--special">Baking</span></h2>
+        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quisquam nam alias atque odio
+            ipsum illo at sit repellendus maxime, consectetur, incidunt possimus aspernatur accusamus ipsam quasi
+            debitis eius esse.</p>
+        <a href="#menu" class="btn">View full menu</a>
+    </section>
+
+    <section class="menu-slider">
+        <div class="glide slider__wrapper">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide slide slide--one">
+                        <div class="slide__content">
+                            <h3 class="slide__heading">The Lemon Cake</h3>
+                            <p class="slide__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem,
+                                voluptatem
+                                veniam!
+                                Sapiente, similique vero! Molestiae, autem. Veniam eaque adipisci rem consectetur
+                                suscipit.
+                            </p>
+                            <p class="slide__price">$15.00</p>
+                            <a href="#menu-slider" class="slide__btn">View all</a>
+                        </div>
+                    </li>
+                    <li class="glide__slide slide slide--two">
+                        <div class="slide__content">
+                            <h3 class="slide__heading">The Lemon Cake</h3>
+                            <p class="slide__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem,
+                                voluptatem
+                                veniam!
+                                Sapiente, similique vero! Molestiae, autem. Veniam eaque adipisci rem consectetur
+                                suscipit.
+                            </p>
+                            <p class="slide__price">$15.00</p>
+                            <a href="#menu-slider" class="slide__btn">View all</a>
+                        </div>
+                    </li>
+                    <li class="glide__slide slide slide--three">
+                        <div class="slide__content">
+                            <h3 class="slide__heading">The Lemon Cake</h3>
+                            <p class="slide__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem,
+                                voluptatem
+                                veniam!
+                                Sapiente, similique vero! Molestiae, autem. Veniam eaque adipisci rem consectetur
+                                suscipit.
+                            </p>
+                            <p class="slide__price">$15.00</p>
+                            <a href="#menu-slider" class="slide__btn">View all</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+                <button data-glide-dir="<"
+                    class="arrow arrow__left icon-left-open glide__arrow glide__arrow--left"></button>
+                <button data-glide-dir=">"
+                    class="arrow arrow__right icon-right-open glide__arrow glide__arrow--right"></button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="glide-3.3.0/dist/glide.min.js"></script>
     <script src="js/script.js"></script>
+
 </body>
 
 </html>

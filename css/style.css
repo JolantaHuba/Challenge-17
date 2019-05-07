@@ -24,6 +24,7 @@ ul, ol {
   font-size: 1.7em;
   font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
   margin-bottom: 35px;
 }
 
@@ -300,7 +301,7 @@ ul, ol {
 .main-heading {
   position: relative;
   font-family: 'Master Of Break', sans-serif;
-  font-size: 2.2em;
+  font-size: 2.4em;
   color: #ed2024;
   text-align: center;
   z-index: 1;
@@ -425,7 +426,7 @@ ul, ol {
 .time {
   background-color: #fff2ed;
   max-width: 1600px;
-  margin: auto;
+  margin: 0 auto;
   overflow: hidden;
 }
 
@@ -484,6 +485,212 @@ ul, ol {
   .time__pot {
     width: 150px;
     margin: 50px 0;
+  }
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15vh 2rem;
+}
+
+@media (min-width: 1300px) {
+  .menu {
+    font-size: 1.1rem;
+  }
+}
+
+.slider__wrapper {
+  position: relative;
+  max-width: 1600px;
+  margin: auto;
+}
+
+.slide {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.slide--one {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))), url(../img/lemon-mobile.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(../img/lemon-mobile.jpg);
+}
+
+.slide--two {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))), url(../img/lemon-mobile.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(../img/lemon-mobile.jpg);
+}
+
+.slide--three {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))), url(../img/lemon-mobile.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(../img/lemon-mobile.jpg);
+}
+
+.slide__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 3.5rem;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.slide__heading {
+  position: relative;
+  font-family: 'Master Of Break', sans-serif;
+  font-size: 2.5em;
+  color: #ed2024;
+  text-align: center;
+  z-index: 1;
+  margin-bottom: 20px;
+}
+
+.slide__heading::before {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: 'The Lemon Cake';
+  z-index: -1;
+  -webkit-text-stroke: 10px #fff;
+}
+
+.slide__text {
+  max-width: 500px;
+  font-size: .8em;
+}
+
+.slide__price {
+  font-family: 'Master Of Break', sans-serif;
+  font-size: 1.6em;
+  padding: 30px 0;
+}
+
+.slide__btn {
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: .8em;
+  font-weight: 700;
+  border: 2px solid #fff;
+  padding: 15px 30px;
+  -webkit-transition: color .3s, background-color .3s;
+  transition: color .3s, background-color .3s;
+}
+
+.slide__btn:hover {
+  color: #ed2024;
+  background-color: #fff;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 1;
+  font-size: 1.3em;
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  opacity: .6;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+}
+
+.arrow:hover {
+  opacity: 1;
+}
+
+.arrow__left {
+  left: 2%;
+}
+
+.arrow__right {
+  right: 2%;
+}
+
+@media (min-width: 640px) {
+  .slide--one {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))), url(../img/lemon-mobile-land.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(../img/lemon-mobile-land.jpg);
+  }
+  .slide--two {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))), url(../img/lemon-mobile-land.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(../img/lemon-mobile-land.jpg);
+  }
+  .slide--three {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))), url(../img/lemon-mobile-land.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(../img/lemon-mobile-land.jpg);
+  }
+}
+
+@media (min-width: 1024px) {
+  .slider__wrapper {
+    font-size: 1.2rem;
+  }
+  .slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 90vh;
+  }
+  .slide--one {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))), url(../img/lemon-desktop.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(../img/lemon-desktop.jpg);
+  }
+  .slide--two {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))), url(../img/lemon-desktop.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(../img/lemon-desktop.jpg);
+  }
+  .slide--two {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))), url(../img/lemon-desktop.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(../img/lemon-desktop.jpg);
+  }
+  .slide__content {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: left;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 1300px) {
+  .slider__wrapper {
+    font-size: 1.5rem;
+  }
+  .slide__content {
+    margin-right: 10%;
   }
 }
 /*# sourceMappingURL=style.css.map */
