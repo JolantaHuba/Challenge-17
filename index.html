@@ -16,14 +16,14 @@
 <body>
     <nav class="nav">
         <div class="nav__wrapper">
-            <a href="#" class="nav__logo"><img src="img/logo-nav.png" alt="" class="nav__img"></a>
+            <a href="#header" class="nav__logo"><img src="img/logo-nav.png" alt="" class="nav__img"></a>
             <button class="nav__burger" aria-label="Menu">
                 <div class="nav__burger-line"></div>
                 <div class="nav__burger-line"></div>
                 <div class="nav__burger-line"></div>
             </button>
             <ul class="nav__list">
-                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#header" class="nav__link">Home</a></li>
                 <li class="nav__item"><a href="#reservation" class="nav__link">Reservation</a></li>
                 <li class="nav__item"><a href="#menu" class="nav__link">Menu</a></li>
                 <li class="nav__item"><a href="#blog" class="nav__link">Blog</a></li>
@@ -34,18 +34,18 @@
         </div>
     </nav>
 
-    <header class="header">
+    <header class="header" id="header">
         <h1 class="main-heading outline">Taste on Our hands!</h1>
         <p class="header__text">- Wellcome -</p>
         <a href="#reservation" class="header__arrow-down"><span class="icon-angle-double-down"></span></a>
     </header>
 
-    <section class="reservation">
+    <section class="reservation" id="reservation">
         <h2 class="heading">Wellcome to our<span class="heading heading--special">Top</span></h2>
         <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quisquam nam alias atque odio
             ipsum illo at sit repellendus maxime, consectetur, incidunt possimus aspernatur accusamus ipsam quasi
             debitis eius esse.</p>
-        <a href="#reservation" class="btn">Make a reservation</a>
+        <a href="#contact" class="btn">Make a reservation</a>
     </section>
 
     <section class="time">
@@ -59,7 +59,7 @@
         </div>
     </section>
 
-    <section class="menu">
+    <section class="menu" id="menu">
         <h2 class="heading">Our<span class="heading heading--special">Baking</span></h2>
         <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quisquam nam alias atque odio
             ipsum illo at sit repellendus maxime, consectetur, incidunt possimus aspernatur accusamus ipsam quasi
@@ -73,7 +73,7 @@
                 <ul class="glide__slides">
                     <li class="glide__slide slide slide--one">
                         <div class="slide__content">
-                            <h3 class="slide__heading">The Lemon Cake</h3>
+                            <h3 class="main-heading">The Lemon Cake</h3>
                             <p class="slide__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem,
                                 voluptatem
                                 veniam!
@@ -86,27 +86,27 @@
                     </li>
                     <li class="glide__slide slide slide--two">
                         <div class="slide__content">
-                            <h3 class="slide__heading">The Lemon Cake</h3>
+                            <h3 class="main-heading">The Cherry Cake</h3>
                             <p class="slide__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem,
                                 voluptatem
                                 veniam!
                                 Sapiente, similique vero! Molestiae, autem. Veniam eaque adipisci rem consectetur
                                 suscipit.
                             </p>
-                            <p class="slide__price">$15.00</p>
+                            <p class="slide__price">$12.00</p>
                             <a href="#menu-slider" class="slide__btn">View all</a>
                         </div>
                     </li>
                     <li class="glide__slide slide slide--three">
                         <div class="slide__content">
-                            <h3 class="slide__heading">The Lemon Cake</h3>
+                            <h3 class="main-heading">The Strawberry Cake</h3>
                             <p class="slide__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem,
                                 voluptatem
                                 veniam!
                                 Sapiente, similique vero! Molestiae, autem. Veniam eaque adipisci rem consectetur
                                 suscipit.
                             </p>
-                            <p class="slide__price">$15.00</p>
+                            <p class="slide__price">$17.00</p>
                             <a href="#menu-slider" class="slide__btn">View all</a>
                         </div>
                     </li>
@@ -121,6 +121,40 @@
         </div>
     </section>
 
+    <section class="features" id="features">
+        <div class="feature">
+            <img class="feature__icon" src="img/icon-cart.png" alt="">
+            <p class="feature__name">Online Shopping</p>
+        </div>
+        <span class="features__line"></span>
+        <div class="feature">
+            <img class="feature__icon" src="img/icon-truck.png" alt="">
+            <p class="feature__name">Free Ship</p>
+        </div>
+        <span class="features__line"></span>
+        <div class="feature">
+            <img class="feature__icon" src="img/icon-ok.png" alt="">
+            <p class="feature__name">Quality Products</p>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="gallery__wrapper">
+            <div class="gallery__item"><img class="gallery__img" src="img/gallery-coffee.jpg" alt="A coffee"></div>
+            <div class="gallery__item">
+                <h3 class="subheading">Gallery</h3>
+            </div>
+            <div class="gallery__item"><img class="gallery__img" src="img/gallery-cake.jpg" alt="A piece of cake"></div>
+            <div class="gallery__item"><img class="gallery__img" src="img/gallery-cookies.jpg" alt="Colorful cookies">
+            </div>
+            <div class="gallery__item overlay">
+                <img class="gallery__img overlay__img" src="img/gallery-croissants.jpg" alt="Croissants">
+                <p class="gallery__item-title">The cake blah</p>
+            </div>
+            <div class="gallery__item"><img class="gallery__img" src="img/gallery-chips.jpg" alt="Burger with chips">
+            </div>
+        </div>
+    </section>
 
 
     <script src="glide-3.3.0/dist/glide.min.js"></script>
