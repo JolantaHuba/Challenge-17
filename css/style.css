@@ -47,6 +47,10 @@ ul, ol {
   margin-left: 17px;
 }
 
+.heading--contact {
+  color: #fff;
+}
+
 .subheading {
   color: #ff7e66;
   font-size: 1.8em;
@@ -72,6 +76,7 @@ ul, ol {
   background-color: #ff7e66;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
   font-size: .8em;
   padding: 15px 30px;
   margin-top: 35px;
@@ -416,9 +421,9 @@ ul, ol {
 }
 
 .time {
-  background-color: #fff2ed;
   max-width: 1600px;
   margin: 0 auto;
+  background-color: #fff2ed;
   overflow: hidden;
 }
 
@@ -504,9 +509,9 @@ ul, ol {
 }
 
 .slider__wrapper {
-  position: relative;
   max-width: 1600px;
-  margin: auto;
+  margin: 0 auto;
+  position: relative;
 }
 
 .slide {
@@ -836,6 +841,311 @@ ul, ol {
   }
   .gallery__img {
     min-width: 120%;
+  }
+}
+
+@media (min-width: 1300px) {
+  .gallery {
+    font-size: 1.3rem;
+  }
+}
+
+.blog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 80px 2rem;
+}
+
+.blog__posts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 70px;
+  width: 100%;
+  max-width: 1300px;
+}
+
+.post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  text-align: center;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+.post::before {
+  display: block;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateY(-60%);
+          transform: translateY(-60%);
+  content: "";
+  width: 120%;
+  height: 350px;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.post__img {
+  width: 80%;
+}
+
+.post__title {
+  position: absolute;
+  top: 0;
+  font-size: 1.4em;
+  text-transform: uppercase;
+}
+
+.post__title-special {
+  display: block;
+  font-family: 'Master of break';
+  color: #ed2024;
+  text-transform: none;
+  font-size: .9em;
+}
+
+.post__btn {
+  position: absolute;
+  top: 12%;
+  padding: 10px 20px;
+}
+
+@media (min-width: 530px) {
+  .blog__posts {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .post {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .post__btn {
+    top: 17%;
+    z-index: -1;
+    opacity: 0;
+    -webkit-transition: background-color .3s, opacity .5s;
+    transition: background-color .3s, opacity .5s;
+  }
+  .post {
+    width: 25%;
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s, -webkit-transform .3s;
+  }
+  .post::before {
+    -webkit-transform: translateY(-60%);
+            transform: translateY(-60%);
+    width: 85%;
+    height: 240px;
+  }
+  .post:hover {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  .post:hover::before {
+    width: 130%;
+    height: 350px;
+  }
+  .post:hover .post__btn {
+    z-index: 0;
+    opacity: 1;
+  }
+}
+
+@media (min-width: 1300px) {
+  .post:hover::before {
+    height: 450px;
+  }
+  .blog {
+    font-size: 1.1rem;
+  }
+}
+
+.contact {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))), url(../img/contact-mobile.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(../img/contact-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 15vh 2rem;
+}
+
+.contact__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.contact__input,
+.contact__message {
+  width: 100%;
+  font-size: 1em;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 10px;
+  margin-bottom: 25px;
+  outline-color: #fff;
+}
+
+.contact__input::-webkit-input-placeholder,
+.contact__message::-webkit-input-placeholder {
+  font-family: 'Roboto Condensed';
+  color: #fff;
+  font-size: .9em;
+}
+
+.contact__input:-ms-input-placeholder,
+.contact__message:-ms-input-placeholder {
+  font-family: 'Roboto Condensed';
+  color: #fff;
+  font-size: .9em;
+}
+
+.contact__input::-ms-input-placeholder,
+.contact__message::-ms-input-placeholder {
+  font-family: 'Roboto Condensed';
+  color: #fff;
+  font-size: .9em;
+}
+
+.contact__input::placeholder,
+.contact__message::placeholder {
+  font-family: 'Roboto Condensed';
+  color: #fff;
+  font-size: .9em;
+}
+
+.contact__input:focus,
+.contact__message:focus {
+  border: 1px solid #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.3);
+          box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.3);
+}
+
+.contact__message {
+  height: 200px;
+  resize: none;
+  font-family: 'Roboto Condensed';
+}
+
+.contact__btn {
+  width: 100%;
+  border: none;
+  font-family: 'Roboto Condensed';
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  margin-top: 0;
+}
+
+.contact__label {
+  position: absolute;
+  top: 0;
+  left: -100%;
+}
+
+@media (min-width: 530px) {
+  .contact {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))), url(../img/contact-mobile-land.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(../img/contact-mobile-land.jpg);
+  }
+}
+
+@media (min-width: 760px) and (orientation: portrait) {
+  .contact {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))), url(../img/contact-tab.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(../img/contact-tab.jpg);
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))), url(../img/contact-desktop.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(../img/contact-desktop.jpg);
+  }
+  .contact__form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .contact__input {
+    width: 31%;
+  }
+}
+
+@media (min-width: 1300px) {
+  .contact {
+    font-size: 1.1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

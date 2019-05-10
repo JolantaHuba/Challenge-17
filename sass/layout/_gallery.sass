@@ -1,50 +1,6 @@
-// FEATURES
-    
-.features
-    +flex-centered
-    flex-direction: column
-    text-align: center
-    padding: 40px 40px 20px
-
-.feature
-    margin-bottom: 40px
-
-
-.feature__icon
-    height: 60px
-    margin-bottom: 15px
-
-.feature__name
-    font-size: 1.3em
-
-.features__line
-    display: block
-    width: 50%
-    height: 2px
-    background-color: $black
-    margin-bottom: 40px
-
-@media (min-width: 640px)
-    .features
-        flex-direction: row
-        position: relative
-
-    .features__line
-        width: 2px
-        height: 80px
-        margin: 0 40px
-        margin-bottom: 30px
-
-@media (min-width: 1024px)
-    .features__line
-        margin: 0 6%
-
-
-// GALLERY
 
 .gallery
-    max-width: 1600px
-    margin: 0 auto
+    +limited-width
 
 .gallery__wrapper
     display: grid
@@ -116,3 +72,7 @@
 
     .gallery__img
         min-width: 120%
+
+@media (min-width: 1300px)
+    .gallery
+        font-size: 1.3rem

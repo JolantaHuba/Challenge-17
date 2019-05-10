@@ -1,0 +1,78 @@
+.contact
+    +limited-width
+    +flex-centered
+    flex-direction: column
+    position: relative
+    background-image: linear-gradient(rgba(0,0,0,.3)), url(../img/contact-mobile.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    padding: 15vh 2rem
+
+.contact__form
+    +flex-centered
+    flex-direction: column
+    width: 90%
+    max-width: 1200px
+
+.contact__input,
+.contact__message
+    width: 100%
+    font-size: 1em
+    color: $white
+    background-color: transparent
+    border: 1px solid $white
+    padding: 10px
+    margin-bottom: 25px
+    outline-color: $white
+    &::placeholder
+        font-family: 'Roboto Condensed'
+        color: $white
+        font-size: .9em
+    &:focus
+        border: 1px solid $white
+        background-color: rgba(0,0,0,.5)
+        box-shadow: 0 0 5px 1px rgba(255,255,255,.3)
+
+.contact__message
+    height: 200px
+    resize: none
+    font-family: 'Roboto Condensed'
+
+.contact__btn
+    width: 100%
+    border: none
+    font-family: 'Roboto Condensed'
+    font-weight: 700
+    letter-spacing: 1.5px
+    cursor: pointer
+    margin-top: 0
+
+.contact__label
+    position: absolute
+    top: 0
+    left: -100%
+
+@media (min-width:530px)
+    .contact
+        background-image: linear-gradient(rgba(0,0,0,.3)), url(../img/contact-mobile-land.jpg)
+
+@media (min-width:760px) and (orientation: portrait)
+    .contact
+        background-image: linear-gradient(rgba(0,0,0,.3)), url(../img/contact-tab.jpg)
+
+@media (min-width:1024px)
+    .contact
+        background-image: linear-gradient(rgba(0,0,0,.3)), url(../img/contact-desktop.jpg)
+
+    .contact__form
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: space-between
+
+    .contact__input
+        width: 31%
+    
+@media (min-width:1300px)
+    .contact
+        font-size: 1.1rem
