@@ -1,3 +1,4 @@
+// NAVIGATION
 const burgerIcon = document.querySelector('.nav__burger');
 const navList = document.querySelector('.nav__list');
 const Links = document.querySelectorAll('a')
@@ -12,14 +13,14 @@ navList.addEventListener('click', function () {
     burgerIcon.classList.remove('active')
 })
 
-// scroll, animation offset... instead scrollIntoView
-
+// SCROLL
 Links.forEach(link => {
     link.addEventListener('click', function () {
-        let goTo = this.getAttribute('href').replace('#', '.')
-        let howFar = document.querySelector(goTo).offsetTop - 60
-        window.scroll(0, howFar)
-        // document.querySelector(goTo).scrollIntoView(true)
+        if (this.getAttribute('href')[0] == '#') {
+            let goTo = this.getAttribute('href').replace('#', '.')
+            let howFar = document.querySelector(goTo).offsetTop - 60
+            window.scroll(0, howFar)
+        }
     })
 })
 
@@ -27,9 +28,3 @@ Links.forEach(link => {
 new Glide('.glide', {
     type: 'carousel',
 }).mount()
-
-// burgerIcon.addEventListener('click', function () {
-//     burgerLines.forEach(line => {
-//         line.classList.toggle('close');
-//     });
-// })

@@ -120,7 +120,7 @@
         </div>
     </section>
 
-    <section class="features">
+    <div class="features">
         <div class="feature">
             <img class="feature__icon" src="img/icon-cart.png" alt="">
             <p class="feature__name">Online Shopping</p>
@@ -135,7 +135,7 @@
             <img class="feature__icon" src="img/icon-ok.png" alt="">
             <p class="feature__name">Quality Products</p>
         </div>
-    </section>
+    </div>
 
     <section class="gallery">
         <div class="gallery__wrapper">
@@ -185,22 +185,87 @@
     </section>
 
     <section class="contact">
-        <h2 class="heading heading--contact">Contact<span class="heading--special">Us</span></h2>
-        <form class="contact__form">
-            <label class="contact__label" for="name">Your name</label>
-            <input class="contact__input" type="text" name="name" id="name" placeholder="Your name" required>
-            <label class="contact__label" for="email">Your email</label>
-            <input class="contact__input" type="email" name="email" id="email" placeholder="Email address" required>
-            <label class="contact__label" for="subject">Subject</label>
-            <input class="contact__input" type="text" name="subject" id="subject" placeholder="Subject" required>
-            <label class="contact__label" for="message">Your message</label>
-            <textarea class="contact__message" name="message" id="message" placeholder="Your message"
-                required></textarea>
-            <button class="contact__btn btn" type="submit">Submit now</button>
-        </form>
+        <div class="contact__form-wrapper">
+            <h2 class="heading heading--contact">Contact<span class="heading--special">Us</span></h2>
+            <form class="contact__form">
+                <label class="contact__label" for="name">Your name</label>
+                <input class="contact__input" type="text" name="name" id="name" placeholder="Your name" required>
+                <label class="contact__label" for="email">Your email</label>
+                <input class="contact__input" type="email" name="email" id="email" placeholder="Email address" required>
+                <label class="contact__label" for="subject">Subject</label>
+                <input class="contact__input" type="text" name="subject" id="subject" placeholder="Subject" required>
+                <label class="contact__label" for="message">Your message</label>
+                <textarea class="contact__message" name="message" id="message" placeholder="Your message"
+                    required></textarea>
+                <button class="contact__btn btn" type="submit">Submit now</button>
+            </form>
+        </div>
+
+        <div class="contact__items">
+            <div class="contact__item">
+                <img src="img/contact-email.jpg" alt="" class="contact__item-img">
+                <span class="contact__item-icon icon-mail"></span>
+                <address class="contact__item-text">
+                    <span class="contact__item-name">Email</span>
+                    top@blah.com
+                </address>
+            </div>
+            <div class="contact__item">
+                <img src="img/contact-location.jpg" alt="" class="contact__item-img">
+                <span class="contact__item-icon icon-location"></span>
+                <address class="contact__item-text">
+                    <span class="contact__item-name">Our restaurant</span>
+                    431-Nguyen Khang <br> Ha Noi-Viet Nam
+                </address>
+            </div>
+            <div class="contact__item">
+                <img src="img/contact-phone.jpg" alt="" class="contact__item-img">
+                <span class="contact__item-icon icon-phone"></span>
+                <address class="contact__item-text">
+                    <span class="contact__item-name">Phone</span>
+                    (+84)-797-6809
+                </address>
+            </div>
+        </div>
+        <a class="contact__map-wrapper" href="https://goo.gl/maps/wVd9fJN1BcnakSSC9" target="_blink">
+        <div class="contact__map">
+            <p class="map__text">Find</p>
+            <div class="map__text-bg"><span class="map__special-text">Top</span></div>
+            <p class="map__text">on the map</p>
+        </div>
+    </a>
     </section>
 
+    <footer class="footer">
+        <h2 class="footer__heading">Top</h2>
+        <p class="text">Coded by Jolanta Huba 2019</p>
+        <ul class="footer__socials">
+            <li class="social__item">
+                <a class="social__link" href="https://www.facebook.com/" target="_blink"><span class="social__icon icon-facebook"></span></a>
+            </li>
+            <li class="social__item">
+                <a class="social__link" href="https://twitter.com/" target="_blink"><span class="social__icon icon-twitter"></span></a>
+            </li>
+            <li class="social__item">
+                <a class="social__link" href="https://www.linkedin.com/" target="_blink"><span class="social__icon icon-linkedin"></span></a>
+            </li>
+            <li class="social__item">
+                <a class="social__link" href="https://www.instagram.com/" target="_blink"><span class="social__icon icon-instagram"></span></a>
+            </li>
+            <li class="social__item">
+                <a class="social__link" href="https://vimeo.com/" target="_blink"><span class="social__icon icon-vimeo"></span></a>
+            </li>
+        </ul>
+    </footer>
 
+
+
+
+    <!-- <iframe class="map"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d156375.1052628668!2d20.945829922474044!3d52.23684999117077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc669a869f01%3A0x72f0be2a88ead3fc!2sWarszawa!5e0!3m2!1spl!2spl!4v1557648529940!5m2!1spl!2spl"
+    allowfullscreen></iframe> -->
+
+    </script>
     <script src="js/glide.min.js"></script>
     <script src="js/script.js"></script>
 

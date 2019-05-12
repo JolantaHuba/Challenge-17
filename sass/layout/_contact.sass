@@ -1,8 +1,14 @@
 .contact
     +limited-width
+    background-color: $pink
+
+// CONTACT FORM
+
+.contact__form-wrapper
     +flex-centered
     flex-direction: column
     position: relative
+    width: 100%
     background-image: linear-gradient(rgba(0,0,0,.3)), url(../img/contact-mobile.jpg)
     background-repeat: no-repeat
     background-size: cover
@@ -32,7 +38,7 @@
     &:focus
         border: 1px solid $white
         background-color: rgba(0,0,0,.5)
-        box-shadow: 0 0 5px 1px rgba(255,255,255,.3)
+        box-shadow: 0 0 5px 2px rgba(255,255,255,.3)
 
 .contact__message
     height: 200px
@@ -54,15 +60,15 @@
     left: -100%
 
 @media (min-width:530px)
-    .contact
+    .contact__form-wrapper
         background-image: linear-gradient(rgba(0,0,0,.3)), url(../img/contact-mobile-land.jpg)
 
 @media (min-width:760px) and (orientation: portrait)
-    .contact
+    .contact__form-wrapper
         background-image: linear-gradient(rgba(0,0,0,.3)), url(../img/contact-tab.jpg)
 
 @media (min-width:1024px)
-    .contact
+    .contact__form-wrapper
         background-image: linear-gradient(rgba(0,0,0,.3)), url(../img/contact-desktop.jpg)
 
     .contact__form
@@ -73,6 +79,106 @@
     .contact__input
         width: 31%
     
+
+// CONTACT ITEMS
+
+.contact__items
+    +flex-centered
+    flex-direction: column
+    // background-color: $pink
+    padding: 2rem
+
+.contact__item
+    width: 80%
+    position: relative
+    display: grid
+    grid-template-columns: 100%
+    grid-template-rows: 1fr 1fr
+    background-color: $white
+    margin-bottom: 40px
+
+.contact__item-img
+    width: 100%
+
+.contact__item-icon
+    position: absolute
+    top: 25%
+    left: 50%
+    transform: translate(-50%, -50%)
+    font-size: 2.5em
+    color: $white
+
+.contact__item-text
+    +flex-centered
+    flex-direction: column
+    width: 100%
+    font-size: 1em
+    font-style: normal
+    text-transform: uppercase
+    color: $gray
+    text-align: center
+
+.contact__item-name
+    display: block
+    color: $black
+    margin-bottom: 10px
+
+
+@media (min-width: 530px)
+    
+    .contact__items
+        flex-direction: row
+        justify-content: space-between
+        max-width: 950px
+        margin: 0 auto
+    
+    .contact__item
+        width: 30%
+
+
+// MAP
+.contact__map-wrapper
+    display: block
+    text-decoration: none
+
+.contact__map
+    +flex-centered
+    width: 100%
+    background-image: url(../img/map-mobile.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    padding: 15%
+
+.map__text
+    font-size: 1em
+    color: $white
+    text-transform: uppercase
+
+.map__text-bg
+    position: relative
+    width: 45px
+    height: 45px
+    border-radius: 50%
+    background-color: $red
+    margin: 0 8px
+
+.map__special-text
+    position: absolute
+    top: 50%
+    left: 20%
+    transform: translate(-50%, -50%)
+    font-family: 'Master Of Break'
+    text-transform: none
+    color: $white
+    margin: 0 15px
+
+@media (min-width: 1024px)
+    .contact__map
+        background-image: url(../img/map-desktop.jpg)
+
+
+
 @media (min-width:1300px)
     .contact
-        font-size: 1.1rem
+        font-size: 1.2rem
