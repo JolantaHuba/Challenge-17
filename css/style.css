@@ -1318,7 +1318,9 @@ ul, ol {
 
 .footer__heading {
   font-family: 'Master Of Break';
+  font-size: 1.5em;
   color: #ed2024;
+  text-decoration: none;
 }
 
 .footer__socials {
