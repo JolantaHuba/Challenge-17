@@ -1085,7 +1085,6 @@ ul, ol {
 
 .contact__input:focus,
 .contact__message:focus {
-  border: 1px solid #fff;
   background-color: rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.3);
           box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.3);
