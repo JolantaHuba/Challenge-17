@@ -1001,6 +1001,9 @@ ul, ol {
 }
 
 @media (min-width: 1300px) and (hover: hover) {
+  .post::before {
+    height: 240px;
+  }
   .post:hover::before {
     height: 450px;
   }
