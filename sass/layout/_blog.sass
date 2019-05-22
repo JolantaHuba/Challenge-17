@@ -62,18 +62,22 @@
 
 
 @media (min-width: 1024px)
-
     .post__btn
         top: 17%
+
+    .post
+        width: 25%
+
+@media (min-width: 1024px) and (hover: hover)
+
+    .post__btn
         z-index: -1
         opacity: 0
         transition: background-color .3s, opacity .5s
 
     .post
-        width: 25%
         transition: transform .3s
         &::before
-            transform: translateY(-60%)
             width: 85%
             height: 240px
         &:hover
@@ -85,10 +89,16 @@
             z-index: 0
             opacity: 1
 
+
 @media (min-width: 1300px)
     .post
-        &:hover::before
+        &::before
             height: 450px
 
     .blog
         font-size: 1.1rem
+
+@media (min-width: 1300px) and (hover: hover)
+    .post
+        &:hover::before
+            height: 450px

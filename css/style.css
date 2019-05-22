@@ -954,21 +954,26 @@ ul, ol {
 @media (min-width: 1024px) {
   .post__btn {
     top: 17%;
+  }
+  .post {
+    width: 25%;
+  }
+}
+
+@media (min-width: 1024px) and (hover: hover) {
+  .post__btn {
     z-index: -1;
     opacity: 0;
     -webkit-transition: background-color .3s, opacity .5s;
     transition: background-color .3s, opacity .5s;
   }
   .post {
-    width: 25%;
     -webkit-transition: -webkit-transform .3s;
     transition: -webkit-transform .3s;
     transition: transform .3s;
     transition: transform .3s, -webkit-transform .3s;
   }
   .post::before {
-    -webkit-transform: translateY(-60%);
-            transform: translateY(-60%);
     width: 85%;
     height: 240px;
   }
@@ -987,11 +992,17 @@ ul, ol {
 }
 
 @media (min-width: 1300px) {
-  .post:hover::before {
+  .post::before {
     height: 450px;
   }
   .blog {
     font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 1300px) and (hover: hover) {
+  .post:hover::before {
+    height: 450px;
   }
 }
 
